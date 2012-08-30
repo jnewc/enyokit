@@ -1,0 +1,2 @@
+Like the 'core' package, the 'utils' package declares it's kinds in the 'enyokit' namespace.
+For example, you can access the DateUtility now method like so: enyokit.DateUtility.now()
