@@ -11,9 +11,9 @@ if(window.enyokit && !enyokit.config) {
 
 		/** Set which global packages should be loaded.
 			NOTE: you should probably comment out unused libs rather than delete.
-			Order won't matter in the future, but don't change it for now. 
+			Order shouldn't matter in the future, but don't change it for now. 
 		*/
-		libs:["data","core","net"],
+		libs:["data","core","net", "ui"],
 
 		//* Sets whether enyokit should register itself as a namespace.
 		doRegisterTheme: true,

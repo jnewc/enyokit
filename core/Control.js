@@ -7,7 +7,7 @@ enyo.kind({
 			published property should be called after construction. Note that
 			this will not occur for kinds in the 'enyo' and 'onyx' namespaces.
 		*/
-		autoInitProps: true,
+		autoInitProps: false,
 		/** 
 			Defines whether transitions should be enabled for all 
 			possible CSS rule changes for this control. This is done
@@ -58,6 +58,9 @@ enyo.kind({
 		this.inherited(arguments);
 		
 		// Auto-init properties
+		// NOTE: This will only init properties that are outside of the enyo and
+		// onyx namespaces, to avoid any triggering of unnecessary behaviour.
+		// For the sake of consistency, the autoInitProps flag defaults to false.
 		if(this.getAutoInitProps()) {
 			do {
 				// Only init properties for non-enyo libs. Check that .. 
@@ -71,7 +74,7 @@ enyo.kind({
 						}
 					}
 				}
-				proto = proto["__proto__"] || undefined;
+				proto = proto["__proto__"];
 			}
 			while(proto !== undefined);
 		}

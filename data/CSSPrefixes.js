@@ -9,13 +9,13 @@ enyokit.CSSPrefixes = {
 	
 /* Flex Box Layout */
 	
-"box-align":  { standard: true, moz: true, webkit: true, ms: true },
-"box-flex":   { standard: true, moz: true, webkit: true, ms: true },
-"box-orient": { standard: true, moz: true, webkit: true, ms: true },
-"box-pack":   { standard: true, moz: true, webkit: true, ms: true },
+"box-align":   { standard: true, moz: true, webkit: true, ms: true },
+"box-flex":    { standard: true, moz: true, webkit: true, ms: true },
+"box-orient":  { standard: true, moz: true, webkit: true, ms: true },
+"box-pack":    { standard: true, moz: true, webkit: true, ms: true },
 
-"box-shadow": { standard: true,            webkit: true },
-"box-sizing": { standard: true, moz: true, webkit: true },
+"box-shadow":  { standard: true,            webkit: true },
+"box-sizing":  { standard: true, moz: true, webkit: true },
 
 /* User Rules */
 
@@ -24,13 +24,13 @@ enyokit.CSSPrefixes = {
 
 /* Word Rules */
 
-"word-break": { standard: true, ms: true },
-"word-wrap":  { standard: true, ms: true },
+"word-break":  { standard: true, ms: true },
+"word-wrap":   { standard: true, ms: true },
 
 /* Transform Rules */
 
-"transform":        { standard: true, webkit: true, ms: true, o: true },
-"transform-origin": { standard: true, webkit: true, ms: true, o: true },
+"transform":           { standard: true, webkit: true, ms: true, o: true },
+"transform-origin":    { standard: true, webkit: true, ms: true, o: true },
 
 /* Transition Rules */
 
@@ -38,15 +38,15 @@ enyokit.CSSPrefixes = {
 "transition-delay":    { standard: true, webkit: true, ms: true, o: true },
 "transition-duration": { standard: true, webkit: true, ms: true, o: true },
 "transition-property": { standard: true, webkit: true, ms: true, o: true },
-"transition-timing-function": {
-						 standard: true, webkit: true, ms: true, o:true },
+"transition-timing-function": 
+					   { standard: true, webkit: true, ms: true, o: true },
 
 	
 /* Animation Rules */
 
-"animation-delay":    { standard: true, webkit: true, ms: true },
-"animation-duration": { standard: true, webkit: true, ms: true }
-// TODO
+"animation-delay":     { standard: true, webkit: true, ms: true },
+"animation-duration":  { standard: true, webkit: true, ms: true }
 
+// TODO: add any other relevant rules.
 
 };
