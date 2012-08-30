@@ -24,6 +24,7 @@
 		formdata    (A FormData object)
 */
 
+// TODO: Comments
 enyo.kind({
 	name: "Ajax",
 	kind: "Component",

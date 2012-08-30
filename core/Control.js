@@ -33,6 +33,8 @@ enyo.kind({
 		Checks if there are any prefixed versions of a CSS rule and
 		if there are, applies them. Also applies the standard rule
 		if it is applicable.
+		
+		Uses the CSSPrefixes table in the 'data' package.
 	*/
 	applyStyleWithPrefixes: function(name, value) {
 		var prefixes, prefix, nm;
@@ -61,12 +63,13 @@ enyo.kind({
 		// NOTE: This will only init properties that are outside of the enyo and
 		// onyx namespaces, to avoid any triggering of unnecessary behaviour.
 		// For the sake of consistency, the autoInitProps flag defaults to false.
+		// NOTE #2: Yes, I know it's a dodgy hack but it works (mostly...)
 		if(this.getAutoInitProps()) {
 			do {
 				// Only init properties for non-enyo libs. Check that .. 
-				if(typeof proto.published === "object"    && // .. published is available.
-				   proto.kindName.indexOf("enyo.") === -1 && // .. and not enyo core.
-				   proto.kindName.indexOf("onyx.") === -1) { // .. and not onyx lib.
+				if(typeof proto.published === "object"   && // .. published is defined.
+				   proto.kindName.indexOf("enyo.") !== 0 && // .. and not enyo core.
+				   proto.kindName.indexOf("onyx.") !== 0) { // .. and not onyx lib.
 					for(prop in proto.published) {
 						f = this[prop + ctoken];
 						if(typeof f === "function") {

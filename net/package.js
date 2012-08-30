@@ -1,4 +1,5 @@
 enyo.depends(
 	"Ajax.js",
-	"Ajax.Proxy.js"
+	"Ajax.Proxy.js",
+	"OAuth.js"
 );

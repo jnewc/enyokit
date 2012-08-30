@@ -1,3 +1,4 @@
+// TODO: Comments
 enyo.kind({
 	name: "Ajax.Proxy",
 	kind: "Component",

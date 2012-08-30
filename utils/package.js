@@ -1,5 +1,6 @@
 enyo.depends(
 	"DateUtility.js",
 	"StringUtility.js",
-	"HttpUtility.js"
+	"HttpUtility.js",
+	"OAuthUtility.js"
 );
